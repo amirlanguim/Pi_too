@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Хянах самбар</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-weight: bold;
+    color: #8B0000;
+}
+
+.profile {
+    background: #eee;
+    padding: 8px 12px;
+    border-radius: 50%;
+}
+
+/* MAIN */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title h1 {
+    font-size: 28px;
+}
+
+.title p {
+    color: gray;
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SECTION */
+.section {
+    margin-bottom: 25px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* SCHEDULE */
+.schedule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge {
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/* REQUEST */
+.request {
+    margin-top: 10px;
+}
+
+.request button {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    width: 48%;
+}
+
+.accept {
+    background: #00c853;
+    color: white;
+}
+
+.reject {
+    border: 1px solid red;
+    background: white;
+    color: red;
+}
+
+/* TEXTAREA */
+textarea {
+    width: 100%;
+    height: 120px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.save {
+    width: 100%;
+    margin-top: 10px;
+    background: #8B0000;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* FOOTER NAV */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Pi</div>
+    <div>Багшийн хянах самбар</div>
+    <div class="profile">Б</div>
+</header>
+
+<div class="container">
+
+    <div class="title">
+        <h1>Өнөөдрийн хичээлүүд</h1>
+        <p>2026 оны 3 сарын 1, Ням</p>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats">
+        <div class="stat">
+            <div class="icon">⏰</div>
+            <div>
+                <b>2</b><br>Өнөөдрийн хичээл
+            </div>
+        </div>
+
+        <div class="stat">
+            <div class="icon">👨‍🎓</div>
+            <div>
+                <b>9</b><br>Нийт сурагч
+            </div>
+        </div>
+
+        <div class="stat">
+            <div class="icon">⚠️</div>
+            <div>
+                <b>2</b><br>Чөлөөний хүсэлт
+            </div>
+        </div>
+    </div>
+
+    <!-- SCHEDULE -->
+    <div class="section">
+        <h3>Хичээлийн хуваарь</h3>
+
+        <div class="card schedule">
+            <div>
+                <b>08:00 – 11:00</b><br>
+                Математик | 201-р тасаг
+            </div>
+            <div class="badge">0/5</div>
+        </div>
+
+        <div class="card schedule">
+            <div>
+                <b>14:00 – 17:00</b><br>
+                Геометр | 305-р тасаг
+            </div>
+            <div class="badge">0/4</div>
+        </div>
+    </div>
+
+    <!-- REQUEST -->
+    <div class="section">
+        <h3>Чөлөөний хүсэлтүүд</h3>
+
+        <div class="card">
+            <b>А. Тэмүүлэн</b><br>
+            2026-03-05 | Эмнэлэг үзүүлэх
+
+            <div class="request">
+                <button class="accept">Зөвшөөрөх</button>
+                <button class="reject">Татгалзах</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <b>Ж. Сайхан</b><br>
+            2026-03-07 | Гэр бүлийн шалтгаан
+
+            <div class="request">
+                <button class="accept">Зөвшөөрөх</button>
+                <button class="reject">Татгалзах</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTE -->
+    <div class="section">
+        <textarea placeholder="Өнөөдрийн тэмдэглэл бичих..."></textarea>
+        <button class="save">Хадгалах</button>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <div>🏠</div>
+    <div>👨‍🎓</div>
+    <div>📅</div>
+    <div>📥</div>
+    <div>📝</div>
+</div>
+
+</body>
+</html>

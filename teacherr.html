@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Багш сонгох</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    color: #8B0000;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.btn {
+    background: #8B0000;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* STEPS */
+.steps {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    background: #8B0000;
+    color: white;
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    background: #ddd;
+}
+
+/* TITLE */
+.title h1 {
+    font-size: 28px;
+}
+
+.title p {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.card:hover {
+    border: 2px solid #8B0000;
+}
+
+/* SELECTED */
+.selected {
+    border: 2px solid #8B0000;
+}
+
+/* AVATAR */
+.avatar {
+    width: 60px;
+    height: 60px;
+    background: #eee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/* TAG */
+.tag {
+    display: inline-block;
+    background: #eee;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin: 3px;
+}
+
+/* INFO */
+.info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: gray;
+}
+
+/* ACTIONS */
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.prev {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.next {
+    background: #8B0000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Pi ИнСпирэйшн</div>
+    <nav>
+        <a href="#">Нүүр</a>
+        <a href="#">Багш нар</a>
+    </nav>
+    <div>
+        <a href="#">Нэвтрэх</a>
+        <span class="btn">Бүртгүүлэх</span>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- STEPS -->
+    <div class="steps">
+        <div class="circle">1</div>
+        <div class="line"></div>
+        <div class="circle">2</div>
+        <div class="line"></div>
+        <div class="circle active">3</div>
+    </div>
+
+    <!-- TITLE -->
+    <div class="title">
+        <h1>Багш сонгох</h1>
+        <p>Тохирох багшаа сонгоно уу</p>
+    </div>
+
+    <!-- GRID -->
+    <div class="grid">
+
+        <div class="card">
+            <div class="avatar">Б</div>
+            <h4>Б. Батбаяр</h4>
+            <div class="tag">Математик</div>
+            <div class="tag">Геометр</div>
+            <div class="info">⭐ 4.9 | 12 жил</div>
+            <div class="info">450,000₮</div>
+        </div>
+
+        <div class="card">
+            <div class="avatar">Д</div>
+            <h4>Д. Сарантуяа</h4>
+            <div class="tag">Физик</div>
+            <div class="tag">Математик</div>
+            <div class="info">⭐ 4.8 | 8 жил</div>
+            <div class="info">400,000₮</div>
+        </div>
+
+        <div class="card">
+            <div class="avatar">Г</div>
+            <h4>Г. Эрдэнэ</h4>
+            <div class="tag">Хими</div>
+            <div class="tag">Биологи</div>
+            <div class="info">⭐ 4.7 | 6 жил</div>
+            <div class="info">380,000₮</div>
+        </div>
+
+        <div class="card">
+            <div class="avatar">Т</div>
+            <h4>Т. Мөнхбат</h4>
+            <div class="tag">Математик</div>
+            <div class="info">⭐ 4.9 | 15 жил</div>
+            <div class="info">500,000₮</div>
+        </div>
+
+        <div class="card selected">
+            <div class="avatar">О</div>
+            <h4>О. Оюунчимэг</h4>
+            <div class="tag">Математик</div>
+            <div class="tag">Статистик</div>
+            <div class="info">⭐ 4.6 | 5 жил</div>
+            <div class="info">350,000₮</div>
+        </div>
+
+        <div class="card">
+            <div class="avatar">Ж</div>
+            <h4>Ж. Ганбаатар</h4>
+            <div class="tag">Физик</div>
+            <div class="info">⭐ 4.8 | 10 жил</div>
+            <div class="info">420,000₮</div>
+        </div>
+
+    </div>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+        <button class="prev">Өмнөх</button>
+        <button class="next">Дараах</button>
+    </div>
+
+</div>
+
+</body>
+</html>
