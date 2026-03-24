@@ -17,7 +17,6 @@ body {
     background: #f5f5f5;
 }
 
-/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -43,15 +42,12 @@ nav a {
     padding: 8px 15px;
     border-radius: 6px;
 }
-
-/* CONTAINER */
 .container {
     max-width: 1000px;
     margin: auto;
     padding: 30px;
 }
 
-/* STEPS */
 .steps {
     display: flex;
     justify-content: center;
@@ -79,7 +75,6 @@ nav a {
     background: #ddd;
 }
 
-/* TITLE */
 .title h1 {
     font-size: 28px;
 }
@@ -89,14 +84,12 @@ nav a {
     margin-bottom: 20px;
 }
 
-/* GRID */
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-/* CARD */
 .card {
     background: white;
     padding: 20px;
@@ -107,7 +100,6 @@ nav a {
     margin-bottom: 10px;
 }
 
-/* INPUT */
 input {
     width: 100%;
     padding: 10px;
@@ -116,12 +108,10 @@ input {
     border: 1px solid #ccc;
 }
 
-/* FULL CARD */
 .full {
     margin-top: 20px;
 }
 
-/* GOAL */
 .goal {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -133,7 +123,6 @@ input {
     color: gray;
 }
 
-/* BUTTONS */
 .actions {
     display: flex;
     justify-content: space-between;
@@ -173,25 +162,21 @@ input {
 
 <div class="container">
 
-    <!-- STEPS -->
     <div class="steps">
-        <div class="circle">1</div>
+        <div class="circle"><a href="SalbarSongoh.html">1</a></div>
         <div class="line"></div>
-        <div class="circle active">2</div>
+        <div class="circle"></a>2</div>
         <div class="line"></div>
-        <div class="circle">3</div>
+        <div class="circle"><a href="teacherr.html">3</a></div>
     </div>
 
-    <!-- TITLE -->
     <div class="title">
         <h1>Анкет бөглөх</h1>
         <p>Хүүхдийн болон эцэг эхийн мэдээллийг оруулна уу</p>
     </div>
 
-    <!-- GRID -->
     <div class="grid">
 
-        <!-- PARENT -->
         <div class="card">
             <h3>Эцэг эх / Асран хамгаалагч</h3>
 
@@ -200,7 +185,6 @@ input {
             <input placeholder="И-мэйл">
         </div>
 
-        <!-- CHILD -->
         <div class="card">
             <h3>Хүүхдийн мэдээлэл</h3>
 
@@ -212,7 +196,6 @@ input {
 
     </div>
 
-    <!-- EXTRA -->
     <div class="card full">
 
         <input placeholder="Одоогийн түвшин">
@@ -230,7 +213,6 @@ input {
 
     </div>
 
-    <!-- BUTTONS -->
     <div class="actions">
         <button class="prev">Өмнөх</button>
         <button class="next">Дараах</button>

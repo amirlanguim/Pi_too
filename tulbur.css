@@ -10,7 +10,6 @@ body {
     background: #f5f5f5;
 }
 
-/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -37,14 +36,12 @@ nav a {
     border-radius: 6px;
 }
 
-/* CONTAINER */
 .container {
     max-width: 1000px;
     margin: auto;
     padding: 40px;
 }
 
-/* TITLE */
 .title h1 {
     font-size: 28px;
 }
@@ -54,21 +51,18 @@ nav a {
     margin-bottom: 20px;
 }
 
-/* GRID */
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-/* CARD */
 .card {
     background: white;
     padding: 20px;
     border-radius: 12px;
 }
 
-/* INFO */
 .row {
     display: flex;
     justify-content: space-between;
@@ -81,7 +75,6 @@ nav a {
     font-size: 20px;
 }
 
-/* QR */
 .qr-box {
     width: 150px;
     height: 150px;
@@ -93,7 +86,6 @@ nav a {
     font-size: 40px;
 }
 
-/* BUTTON */
 .pay-btn {
     width: 100%;
     margin-top: 20px;
@@ -103,8 +95,6 @@ nav a {
     border: none;
     border-radius: 8px;
 }
-
-/* ACTION */
 .prev {
     margin-top: 20px;
     padding: 10px 20px;
