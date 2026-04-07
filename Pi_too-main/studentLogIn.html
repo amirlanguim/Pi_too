@@ -1,239 +1,102 @@
 <!DOCTYPE html>
 <html lang="mn">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Сурагч Dashboard</title>
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial;
-}
-
-body {
-    background: #f2f2f2;
-}
-
-/* HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 20px;
-    background: white;
-    border-bottom: 1px solid #ddd;
-}
-
-.logo {
-    color: #8B0000;
-    font-weight: bold;
-}
-
-.profile {
-    background: #eee;
-    padding: 8px 12px;
-    border-radius: 50%;
-}
-
-/* CONTAINER */
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-}
-
-/* TITLE */
-.title {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.title h1 {
-    font-size: 26px;
-}
-
-.title p {
-    color: gray;
-}
-
-/* CARD */
-.card {
-    background: white;
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-/* PROGRESS */
-.progress-circle {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 10px dashed #8B0000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    font-weight: bold;
-}
-
-/* GRID */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-/* INFO */
-.info p {
-    margin: 5px 0;
-}
-
-/* BUTTON */
-.btn {
-    background: #8B0000;
-    color: white;
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    width: 100%;
-    margin-top: 10px;
-}
-
-/* PROGRESS BAR */
-.bar {
-    height: 8px;
-    background: #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 10px 0;
-}
-
-.bar div {
-    width: 40%;
-    height: 100%;
-    background: #8B0000;
-}
-
-/* HISTORY */
-.history {
-    display: flex;
-    justify-content: space-between;
-    background: #f9f9f9;
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 10px;
-}
-
-.green { color: green; }
-.red { color: red; }
-
-/* FOOTER */
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: white;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    border-top: 1px solid #ddd;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нэвтрэх | Пи тоо</title>
+    <link rel="stylesheet" href="studentLogIn.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
-    <div class="logo">Pi</div>
-    <div>Хянах самбар</div>
-    <div class="profile">А</div>
-</header>
+<!-- NAV -->
+<nav class="main-nav">
+    <a class="logo" href="index.html">
+        <span class="logo-icon">π</span>
+        <span class="logo-name">Пи тоо</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html">Нүүр</a></li>
+        <li><a href="index.html#programs">Хөтөлбөр</a></li>
+        <li><a href="index.html#teachers">Багш нар</a></li>
+        <li><a href="index.html#pricing">Үнэ</a></li>
+    </ul>
+    <ul class="nav-right">
+        <li><a href="studentLogIn.html" class="nav-login">Нэвтрэх</a></li>
+        <li><a href="anket.html" class="nav-btn">Бүртгүүлэх</a></li>
+    </ul>
+</nav>
 
-<div class="container">
+<!-- НЭВТРЭХ ХУУДАС -->
+<main class="login-page">
 
-    <div class="title">
-        <h1>Сайн байна уу, Тэмүүлэн!</h1>
-        <p>Таны сургалтын дэлгэрэнгүй мэдээлэл</p>
-    </div>
+    <!-- Лого -->
+    <figure class="login-logo">
+        <span class="login-logo-icon">π</span>
+    </figure>
 
-    <!-- PROGRESS -->
-    <div class="card" style="text-align:center;">
-        <div class="progress-circle">
-            45/75
+    <h1 class="login-title">Нэвтрэх</h1>
+    <p class="login-sub">Системд нэвтрэхийн тулд мэдээллээ оруулна уу</p>
+
+    <!-- Форм карт -->
+    <article class="login-card">
+
+        <!-- Хэрэглэгчийн төрөл -->
+        <div class="form-group">
+            <label for="user-type">Хэрэглэгчийн төрөл</label>
+            <select id="user-type" class="form-select">
+                <option>Сурагч</option>
+                <option>Багш</option>
+                <option>Эцэг эх</option>
+            </select>
         </div>
-        <h3>75 цагийн явц</h3>
-        <p>Үлдсэн: 30 цаг</p>
-    </div>
 
-    <div class="grid">
-
-        <!-- NEXT CLASS -->
-        <div class="card info">
-            <h3>Дараагийн хичээл</h3>
-            <p>📅 2026-03-02</p>
-            <p>⏰ Даваа 08:00–11:00</p>
-            <p>👨‍🏫 Б. Батбаяр</p>
-            <p>📍 УБ төв салбар</p>
+        <!-- И-мэйл -->
+        <div class="form-group">
+            <label for="email">И-мэйл</label>
+            <input
+                type="email"
+                id="email"
+                class="form-input"
+                placeholder="user@example.com"
+            >
         </div>
 
-        <!-- QR -->
-        <div class="card" style="text-align:center;">
-            <div style="font-size:60px;">⬛⬜</div>
-            <button class="btn">QR ИРЦИЙН КОД</button>
-        </div>
-
-        <!-- LEAVE -->
-        <div class="card">
-            <h3>Чөлөөний үлдэгдэл</h3>
-            <h2>2 / 5</h2>
-
-            <div class="bar">
-                <div></div>
+        <!-- Нууц үг -->
+        <div class="form-group">
+            <label for="password">Нууц үг</label>
+            <div class="input-wrap">
+                <input
+                    type="password"
+                    id="password"
+                    class="form-input"
+                    placeholder="Нууц үг оруулах"
+                >
+                <button class="eye-btn" onclick="togglePass()" type="button">👁</button>
             </div>
-
-            <p>5 удаагийн чөлөөнөөс 2 ашигласан</p>
-
-            <button class="btn" style="background:white;color:#8B0000;border:1px solid #8B0000;">
-                Чөлөө авах хүсэлт
-            </button>
         </div>
 
-        <!-- HISTORY -->
-        <div class="card">
-            <h3>Ирцийн түүх</h3>
+        <!-- Нэвтрэх товч -->
+        <a href="index.html" class="login-btn">Нэвтрэх</a>
 
-            <div class="history">
-                <span>2026-02-28</span>
-                <span class="green">Ирсэн</span>
-            </div>
+        <!-- Бүртгүүлэх холбоос -->
+        <p class="login-footer">
+            Бүртгэлгүй бол <a href="anket.html">энд дарна уу</a>
+        </p>
 
-            <div class="history">
-                <span>2026-02-26</span>
-                <span class="green">Ирсэн</span>
-            </div>
+    </article>
 
-            <div class="history">
-                <span>2026-02-24</span>
-                <span class="red">Тасалсан</span>
-            </div>
+    <!-- Демо тайлбар -->
+    <p class="login-demo">Демо: Дурын мэдээлэл оруулж нэвтрэх боломжтой</p>
 
-        </div>
+</main>
 
-    </div>
-
-</div>
-
-<div class="footer">
-    <div>🏠</div>
-    <div>📷</div>
-    <div>📅</div>
-    <div>🕘</div>
-    <div>👤</div>
-</div>
+<script>
+function togglePass() {
+    var input = document.getElementById('password');
+    input.type = input.type === 'password' ? 'text' : 'password';
+}
+</script>
 
 </body>
 </html>
