@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Амжилттай</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    color: #8B0000;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.btn {
+    background: #8B0000;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+/* CONTAINER */
+.container {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* ICON */
+.icon {
+    width: 80px;
+    height: 80px;
+    background: #d4edda;
+    color: green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 40px;
+}
+
+/* TITLE */
+h1 {
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+.subtitle {
+    color: gray;
+    margin-top: 10px;
+}
+
+/* CARD */
+.card {
+    max-width: 500px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.row span {
+    margin-left: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+/* BUTTON */
+.home-btn {
+    background: #8B0000;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Pi ИнСпирэйшн</div>
+    <nav>
+        <a href="#">Нүүр</a>
+        <a href="#">Багш нар</a>
+    </nav>
+    <div>
+        <a href="#">Нэвтрэх</a>
+        <span class="btn">Бүртгүүлэх</span>
+    </div>
+</header>
+
+<div class="container">
+
+    <div class="icon">✔</div>
+
+    <h1>Амжилттай!</h1>
+    <p class="subtitle">
+        Таны бүртгэл амжилттай хийгдлээ.<br>
+        Доорх мэдээллийг шалгана уу.
+    </p>
+
+    <!-- CARD -->
+    <div class="card">
+
+        <div class="row">
+            👤 <span><b>Багш:</b> С. Цэцэгмаа</span>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            📅 <span><b>Хуваарь:</b> Даваа, Лхагва, Баасан | 08:00–11:00</span>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            📍 <span><b>Салбар:</b> Хан-Уул</span>
+        </div>
+
+    </div>
+
+    <button class="home-btn">Нүүр хуудас руу буцах</button>
+
+</div>
+
+</body>
+</html>
