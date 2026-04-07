@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="mn">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Амжилттай</title>
 
-<style>
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial;
+    font-family: 'Inter', system-ui;
 }
 
 body {
@@ -103,56 +96,3 @@ hr {
     border: none;
     margin-top: 10px;
 }
-</style>
-
-</head>
-
-<body>
-
-<header>
-    <div class="logo">Pi ИнСпирэйшн</div>
-    <nav>
-        <a href="#">Нүүр</a>
-        <a href="#">Багш нар</a>
-    </nav>
-    <div>
-        <a href="#">Нэвтрэх</a>
-        <span class="btn">Бүртгүүлэх</span>
-    </div>
-</header>
-
-<div class="container">
-
-    <div class="icon">✔</div>
-
-    <h1>Амжилттай!</h1>
-    <p class="subtitle">
-        Таны бүртгэл амжилттай хийгдлээ.<br>
-        Доорх мэдээллийг шалгана уу.
-    </p>
-    <div class="card">
-
-        <div class="row">
-            👤 <span><b>Багш:</b> С. Цэцэгмаа</span>
-        </div>
-
-        <hr>
-
-        <div class="row">
-            📅 <span><b>Хуваарь:</b> Даваа, Лхагва, Баасан | 08:00–11:00</span>
-        </div>
-
-        <hr>
-
-        <div class="row">
-            📍 <span><b>Салбар:</b> Хан-Уул</span>
-        </div>
-
-    </div>
-
-    <button class="home-btn">Нүүр хуудас руу буцах</button>
-
-</div>
-
-</body>
-</html>
