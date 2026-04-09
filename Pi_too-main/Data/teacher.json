@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "А.Баясгалан",
+        "avatar": "Б",
+        "subject": "Математик, Олон улсын математик",
+        "icon": "📐",
+        "experience": 4,
+        "rating": 4.9,
+        "price": 1000000,
+        "type": "international",
+        "href": "teacher1.html"
+    },
+    {
+        "id": 2,
+        "name": "Амирлангуй",
+        "avatar": "А",
+        "subject": "Монгол Математик",
+        "icon": "⚡",
+        "experience": 0.5,
+        "rating": 4.8,
+        "price": 1200000,
+        "type": "mongolian",
+        "href": "teacher2.html"
+    },
+    {
+        "id": 3,
+        "name": "Ч.Энхбилэг",
+        "avatar": "Э",
+        "subject": "Математик",
+        "icon": "📐",
+        "experience": 1,
+        "rating": 4.7,
+        "price": 1200000,
+        "type": "mongolian",
+        "href": "teacher3.html"
+    }
+]

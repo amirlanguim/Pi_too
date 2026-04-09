@@ -1,0 +1,30 @@
+
+
+export class reviews{
+
+    constructor(data) {
+        this.id     = data.id;
+        this.avatar = data.avatar;
+        this.name   = data.name;
+        this.role   = data.role;
+        this.text   = data.text;
+        this.rating = data.rating;
+    }
+
+    // HTML карт үүсгэх арга
+    toHTML() {
+        return `
+            <li class="qcard">
+                <span class="qmark" aria-hidden="true">"</span>
+                <p class="qtext">${this.text}</p>
+                <address class="qauth">
+                    <span class="qav">${this.avatar}</span>
+                    <span>
+                        <strong class="qname">${this.name}</strong>
+                        <span class="qrole">${this.role}</span>
+                    </span>
+                </address>
+            </li>
+        `;
+    }
+}

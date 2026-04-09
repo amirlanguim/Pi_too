@@ -6,6 +6,7 @@
     <title>Пи тоо | Математикийн сургалтын төв</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script type="module" src="js/main.js"></script>
 </head>
 <body>
 
@@ -66,6 +67,9 @@
             </section>
         </div>
     </div>
+
+
+
 
     <!-- Статистик мэдээлэл -->
     <ul class="hero-strip">
@@ -205,6 +209,9 @@
 
 <!-- TEACHERS: багш нар -->
 <section class="sec" id="teachers">
+    <ul class="t-grid" id="teachers-list">
+    <!-- JavaScript энд автоматаар карт үүсгэнэ -->
+    </ul>
     <div class="wrap">
         <header class="sec-hdr">
             <div>
@@ -272,6 +279,9 @@
 
 <!-- TESTIMONIALS: сэтгэгдэл -->
 <section class="sec testi">
+    <ul class="q-grid" id="reviews-list">
+    <!-- JavaScript энд автоматаар сэтгэгдэл үүсгэнэ -->
+    </ul>
     <div class="wrap">
         <p class="sec-lbl">Эцэг эхчүүдийн сэтгэгдэл</p>
         <h2 class="sec-title">Тэд юу гэж хэлэв?</h2>
@@ -399,6 +409,9 @@ function sw(i) {
     });
 }
 </script>
+<strong class="hs-num" id="stat-branches">0</strong>
+<strong class="hs-num" id="stat-hours">0</strong>
+
 
 </body>
 </html>
